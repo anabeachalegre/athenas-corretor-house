@@ -1,0 +1,406 @@
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Adding padding to body */
+body {
+    position: absolute;
+    padding: 25px;
+}
+
+/* Resizing logo and moving to top left corner */
+.logo img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 150px;
+    width: 150px;
+    padding-left: 40px;
+    padding-top: 25px;
+}
+
+/* Styling welcome phrase */
+/* --> Styling the hole paragraph */
+.welcome-phrase p {
+    padding-top: 150px;
+    padding-left: 0;
+    font-size: 30pt;
+    inline-size: 300px;
+    overflow-wrap: break-word;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* --> Styling the word "lucros" */
+/* ----> <span> is used as an <div> */
+.welcome-phrase span {
+    color: #CCD5AE;
+    font-size: 30pt;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+/* Menu styling */
+.navbar {
+    position: fixed;
+    top: 45px;
+    right: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-right: 25px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: none;
+    float: left;
+}
+
+.navbar li a:hover {
+    background-color: #e2cbaa73;
+    border-radius: 30px;
+}
+
+.navbar .login-style {
+    background-color: #d6b68e91;
+    border-radius: 30px;
+    padding: 10px 50px 10px 50px;
+}
+
+/* Search bar styling */
+.search-form {
+    background-color: #ccd5ae91;
+    width: 300px;
+    height: 44px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 450px;
+    left: 25px;
+}
+
+.search-form input {
+    all: unset;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+.search-form button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+
+}
+
+.search-form::placeholder {
+    text-align: center;
+}
+
+/* Immobile cards styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.container-text {
+    font: 16px / 24px "Quicksand", sans-serif;
+    margin: 50px 0;
+}
+
+.all-cards-title {
+    font-size: 32px;
+    font-weight: bolder;
+    position: fixed;
+    top: 200px;
+    left: 500px;
+    inline-size: 300px;
+
+}
+
+.all-cards {
+    display: flex;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    left: 500px;
+    top: 250px;
+    position: fixed;
+    padding: 25px 0px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+
+
+.card:not(:last-child) {
+    margin-right: 10px;
+}
+
+.card:hover {
+    color: white;
+    background: #CE796B;
+}
+
+
+.card img {
+    border-radius: 15px;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    vertical-align: justify;
+    padding: 10px;
+}
+
+#card-title {
+    margin: 10px;
+    max-width: 100%;
+}
+
+.card .card-content {
+    margin: 10px;
+    max-width: 85%;
+}
+
+.card .card-link-wrapper {
+    margin-top: auto;
+    margin-bottom: 12px;
+    margin-left: 6px;
+
+}
+
+.card .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #E7AD99;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.card:hover .card-link {
+    background: var(--darkred);
+}
+
+.cards::-webkit-scrollbar {
+    height: 12px;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background: var(--darkred);
+}
+
+.cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+}
+
+@media (min-width: 500px) {
+    .card {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .card:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 700px) {
+    .card {
+        flex-basis: calc(calc(100% / 3) - 20px);
+    }
+
+    .card:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .card {
+        flex-basis: calc(25% - 30px);
+    }
+
+    .card:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+/* Footer styling */
+.social-midia {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.social-midia img {
+    margin: 5px;
+}

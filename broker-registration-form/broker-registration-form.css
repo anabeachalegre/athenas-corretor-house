@@ -1,0 +1,299 @@
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Adding padding to body */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+/* SignUp Form Styling */
+.sign-up-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.page-title {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+    font-family: 'Quicksand', sans-serif;
+}
+
+::placeholder {
+    color: rgb(175, 175, 175);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.button {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #CCD5AE;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.button:hover {
+    background-color: #9da388;
+    transform: translateY(-2px);
+}
+
+
+.input:focus {
+    border: 2px solid #CE796B;
+}
+
+
+
+/* Resizing logo and moving to top left corner */
+.logo img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 150px;
+    width: 150px;
+    padding-left: 40px;
+    padding-top: 25px;
+}
+
+/* Menu styling */
+.navbar {
+    position: fixed;
+    top: 45px;
+    right: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-right: 25px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: none;
+    float: left;
+}
+
+.navbar li a:hover {
+    background-color: #e2cbaa73;
+    border-radius: 30px;
+}
+
+.navbar .login-style {
+    background-color: #d6b68e91;
+    border-radius: 30px;
+    padding: 10px 50px 10px 50px;
+}
+
+/* Footer styling */
+.social-midia {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.social-midia img {
+    margin: 5px;
+}

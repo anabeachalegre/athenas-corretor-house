@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title> Login | Athenas Corretor House</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" type="text/css" href="sell-history.css">
+
+    <!-- Importing fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Quicksand&display=swap"
+        rel="stylesheet">
+
+    <!-- Importing filter icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- Importing browser tab logo -->
+    <link rel="icon" href="../img/logo.png">
+</head>
+
+<body>
+    <!-- Logo -->
+    <div class="logo">
+        <img src="../img/logo.png" alt="Logo">
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="navbar">
+        <ul>
+            <li><a class="home-style" href="../index.html">Página Inicial</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Filter -->
+    <div class="filter-text">
+        <p>Filtro</p>
+    </div>
+
+    <form class="filter-form" action="#">
+        <input type="search" id="filter-form" placeholder=" Ex: 24 de Setembro de 2022">
+        <button type="search"> <span class="material-symbols-outlined">
+                filter_alt
+            </span></button>
+    </form>
+
+    <!-- Form -->
+    <div class="form-sell">
+        <h2 class="form-sell-title">Formulário de Registro de Vendas/Locações</h2>
+
+        <div class="container">
+            <label for="time" class="label">Horário da Venda:</label>
+            <input type="time" name="time" class="input">
+        </div>
+
+        <div class="container">
+            <label for="price" class="label">Valor total da venda/locação:</label>
+            <input type="number" name="price" class="input">
+        </div>
+
+        <div class="container">
+            <label for="payment" class="label">Forma de Pagamento:</label>
+            <select name="payment" id=" payment">
+                <option value="deposit">Depósito</option>
+                <option value="transfer">Transferência</option>
+                <option value="financing">Financiamento (vendas e boletos)</option>
+                <option value="antecipation">Antecipação (algueis)</option>
+            </select>
+
+            <input type="submit" class="button" value="Registrar">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

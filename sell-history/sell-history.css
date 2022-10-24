@@ -1,0 +1,305 @@
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Body styling */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+/* Resizing logo and moving to top left corner */
+.logo img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 150px;
+    width: 150px;
+    padding-left: 40px;
+    padding-top: 25px;
+}
+
+/* Menu de Navegação */
+.navbar {
+    position: fixed;
+    top: 45px;
+    right: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-right: 25px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: none;
+    float: left;
+}
+
+.navbar li a:hover {
+    background-color: #e2cbaa73;
+    border-radius: 30px;
+}
+
+.navbar .home-style {
+    background-color: #d6b68e91;
+    border-radius: 30px;
+    padding: 10px 50px 10px 50px;
+
+}
+
+.filter-text {
+    font-size: 14px;
+    font-weight: bolder;
+    position: fixed;
+    display: flex;
+    top: 200px;
+    left: 40px;
+    inline-size: 400px;
+    color: #5f5e5e91;
+
+}
+
+.filter-form {
+    background-color: #dfdfdf91;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 220px;
+    left: 35px;
+    border-radius: 30px;
+}
+
+.filter-form input {
+    all: unset;
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+    width: 240px;
+    padding: 6px 10px;
+}
+
+.filter-form button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+
+}
+
+.filter-form::placeholder {
+    text-align: center;
+}
+
+/* Form sell register */
+.form-sell {
+    align-items: center;
+    position: fixed;
+    top: 350px;
+    left: 50;
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.form-sell-title {
+
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    position: fixed;
+    top: 300px;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+
+.container {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 17px;
+    margin-left: 10px;
+
+}
+
+.input {
+    border-radius: 30px;
+
+}
+
+.label {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+select {
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.button {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: auto;
+    padding: 10px;
+    border: none;
+    background-color: #CCD5AE;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 20px;
+}
